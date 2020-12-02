@@ -1,0 +1,508 @@
+/* Universal Styling starts here */
+@import url("https://fonts.googleapis.com/css2?family=Be+Vietnam%3Awght%40100%3B300%3B400%3B500%3B600%3B700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins%3Awght%40900&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "be vietnam";
+    overflow-x: hidden;
+}
+
+html {
+    font-size: 10px;
+    scroll-behavior: smooth;
+}
+
+body {
+    overflow: hidden;
+}
+
+h1 {
+    font-size: 43px;
+    font-family: "Poppins", sans-serif;
+}
+
+span {
+    font-family: "Poppins", sans-serif;
+}
+/* Universal Styling ends here */
+
+/* Section One - Navbar */
+header {
+    width: 100%;
+    height: 66px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 90px;
+    overflow-y: hidden;
+    position: fixed;
+}
+
+a {
+    text-decoration: none;
+}
+
+.logo h1 {
+    font-size: 30px;
+    color: #4169e1;
+}
+
+.navigation {
+    transition: all 0.6s ease-in-out;
+}
+
+.navigation ul {
+    display: flex;
+}
+
+.navigation ul li {
+    list-style: none;
+    margin-right: 24px;
+}
+
+.navigation ul li a {
+    text-decoration: none;
+    color: #242d52;
+    padding: 16px;
+    display: inline-block;
+    font-size: 18px;
+    font-weight: 900;
+    transition: all 0.3s;
+}
+
+nav ul li a:hover {
+    opacity: 0.6;
+}
+
+.sticky {
+    background-color: #fff;
+    border-bottom: 1px solid #4169e1;
+}
+
+.navigation.active {
+    left: 0;
+}
+
+.hamburger {
+    display: none;
+}
+
+.line {
+    width: 40px;
+    height: 7px;
+    background-color: #4169e1;
+    margin-bottom: 5px;
+    border-radius: 5px;
+}
+
+@media only screen and (max-width:900px){
+    header {
+        padding: 0 70px;
+        position: unset;
+    }
+
+    .navigation {
+        position: absolute;
+        top: 60px;
+        left: -100%;
+        width: 100%;
+        height: 55%;
+        background-color: #4169e1;
+    }
+
+    .navigation ul {
+        margin-top: 10px;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .navigation ul li {
+        width: 100%;
+        text-align: center;
+    }
+
+    .navigation ul li a {
+        font-size: 29px;
+        display: block;
+        color: #fff;
+    }
+
+    .logo h1 {
+        margin-top: 10px;
+    }
+
+    .hamburger {
+        display: block;
+        cursor: pointer;
+        margin-top: 20px;
+    }
+}
+/* Section One ends here */
+
+/* Section Two - Main Header Content - Starts here */
+.main-header {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-left: 150px;
+    margin-top: 150px;
+    grid-gap: 150px;
+}
+
+.header_main_content_h1 {
+    font-size: 63px;
+    color: #242d52;
+}
+
+.header_main_content_h1 span {
+    color: #4169e1;
+}
+
+.header_main_content_h1 .nama-belakang {
+    color: #4169e1;
+    font-size: 30px;
+}
+
+.header-content button,
+form button {
+    padding: 12px 35px;
+    background-color: #4169e1;
+    border: none;
+    cursor: pointer;
+    color: #fff;
+    outline: none;
+    border-radius: 100px;
+    transition: all 0.3s;
+}
+
+.cta {
+    margin-top: 20px;
+}
+
+.cta:hover {
+    opacity: 0.6;
+}
+
+.logo_socials {
+    display: flex;
+    flex-direction: column;
+}
+
+.logo_socials_soc {
+    margin-top: 90px;
+}
+
+.logo_socials_soc img {
+    margin-left: 8px;
+    margin-right: 8px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.logo_socials_soc img:hover {
+    transform: scale(1.2);
+}
+
+@media only screen and (max-width: 900px){
+    .main-header {
+        grid-template-columns: 1fr;
+        margin-left: auto;
+        margin-top: 90px;
+        grid-gap: 60px;
+        text-align: center;
+    }
+
+    .header_main_content_h1 {
+        font-size: 43px;
+    }
+
+    .logo_socials_soc {
+        margin-top: 60px;
+    }
+}
+/* Section Two ends here */
+
+/* Section Three stars here */
+.about-section {
+    margin-top: 150px;
+}
+
+.about-heading {
+    text-align: center;
+}
+
+.about-heading h1 {
+    color: #4169e1;
+    font-size: 53px;
+}
+
+.about {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    place-items: center;
+    margin-left: 150px;
+    margin-right: 150px;
+    margin-top: 60px;
+}
+
+.about img {
+    border-radius: 10px;
+}
+
+.about h1 {
+    font-size: 53px;
+    font-weight: 900;
+    color: #4169e1;
+}
+
+.about p {
+    font-size: 21px;
+    color: #a9a9a9;
+}
+
+@media only screen and (max-width: 900px){
+    .about {
+        grid-template-columns: 1fr;
+        grid-gap: 20px;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 60px;
+    }
+
+    .about h1 {
+        font-size: 43px;
+    }
+
+    .about p {
+        font-size: 16px;
+    }
+}
+/* About Section ends here */
+
+/* Skills Section starts here */
+.skill-section {
+    margin-top: 150px;
+}
+
+.skill-section-heading {
+    text-align: center;
+    color: #4169e1;
+}
+
+.skills {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 150px;
+    margin-left: 100px;
+    margin-top: 60px;
+}
+
+
+.title {
+    font-weight: bold;
+    font-size: 20px;
+    color: #4169e1;
+  }
+  
+.bar {
+    width: 90%;
+    height: 35px;
+    background: #ddd;
+    border-radius: 10px;
+    position: relative;
+    transition: all 2s linear;
+}
+
+.bar-1,
+.my-skills {
+    width: 80%;
+    margin: 10px auto 25px;
+}
+
+.bar-inner {
+    width: 0;
+    height: 35px;
+    line-height: 35px;
+    background: #4169e1;
+    border-radius: 5px 0 0 5px;
+}
+
+.bar-percent {
+    position: absolute;
+    right: 10px;
+    top: 5px;
+    font-size: 18px;
+}
+
+@media only screen and (max-width: 900px){
+    .skills {
+        grid-template-columns: 1fr;
+        grid-gap: 40px;
+        margin-left: auto;
+        text-align: center;
+    }
+}
+/* Skill Section ends here */
+
+/* Work Section starts here */
+.work-section {
+    margin-top: 150px;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+}
+
+.work {
+    display: grid;
+    grid-template-columns: repeat(3, 350px);
+    grid-gap: 40px;
+    place-content: center;
+    margin-top: 60px;
+}
+
+.work-section-heading {
+    text-align: center;
+    color: #4169e1;
+}
+
+.work img {
+    width: 350px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: opacity 0.3s;
+}
+
+.work img:hover {
+    opacity: 0.6;
+}
+
+@media only screen and (max-width: 900px){
+    .work {
+        grid-template-columns: repeat(1, 350px);
+    }
+}
+/* Work Section ends here */
+
+/* Contact section starts here */
+.contact-heading {
+    text-align: center;
+    color: #4169e1;
+    margin-top: 150px;
+    margin-bottom: 50px;
+}
+
+.container {
+    background-color: #4169e1;
+    width: 400px;
+    margin: 80px auto;
+    margin-bottom: 140px;
+    border-radius: 20px;
+}
+
+form {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-gap: 10px;
+    padding: 70px 30px 70px 30px;
+}
+
+.form-field {
+    display: flex;
+    flex-direction: column;
+}
+
+input[type="text"],
+input[type="email"] {
+    height: 40px;
+    font-size: 16px;
+    padding-left: 5px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+}
+
+label {
+    font-size: 23px;
+    margin-top: 5px;
+    color: #fff;
+}
+
+textarea {
+    resize: none;
+    font-size: 16px;
+    padding: 6px 5px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+}
+
+.btn {
+    display: flex;
+    align-items: center;
+}
+
+input[type="submit"] {
+    padding: 10px 50px;
+    font-size: 16px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    margin-top: 40px;
+    background-color: #fff;
+    color: #4169e1;
+    cursor: pointer;
+}
+
+.btn:hover {
+    opacity: 0.6;
+}
+
+@media only screen and (max-width: 415px){
+    .container {
+        width: 350px;
+        margin: 50px auto 90px auto;
+    }
+}
+/* Section contact ends here */
+
+/* Section footer starts here */
+footer {
+    background-color: #4169e1;
+    display: flex;
+    padding: 50px 0;
+    align-items: center;
+    justify-content: space-evenly;
+    color: #fff;
+}
+
+.logo-socials {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;   
+}
+
+.logo-socials-soc {
+    margin-top: 30px;
+}
+
+.logo-socials-soc img {
+    margin-left: 5px;
+    margin-right: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.logo-socials-soc img:hover {
+    transform: scale(1.2);
+}
+
+
+
+
+
