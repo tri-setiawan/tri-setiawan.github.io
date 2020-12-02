@@ -182,6 +182,11 @@ form button {
     margin-top: 20px;
 }
 
+.cta a {
+    text-decoration: none;
+    color: #fff;
+}
+
 .cta:hover {
     opacity: 0.6;
 }
@@ -377,7 +382,7 @@ form button {
 }
 
 .work img:hover {
-    opacity: 0.6;
+    transform: scale(2);
 }
 
 @media only screen and (max-width: 900px){
